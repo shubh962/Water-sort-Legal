@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Privacy Policy for Water Sort, an Android water sorting puzzle game.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Privacy Policy — Water Sort</title>
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --text: #182033;
+      --muted: #667085;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --border: #e5e7eb;
+      --success-bg: #ecfdf3;
+      --success-text: #067647;
+      --shadow: 0 12px 35px rgba(16, 24, 40, 0.08);
+      --radius: 18px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(79, 70, 229, 0.08), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 64px 0 36px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #111936, #1d2752);
+      color: #fff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -70px;
+      top: -90px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #e7eaff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 720px;
+      color: #d7dcf2;
+      font-size: 16px;
+    }
+
+    .updated {
+      margin-top: 20px !important;
+      font-size: 13px !important;
+      color: #aeb7d8 !important;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: start;
+      padding-bottom: 60px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 6px 22px rgba(16, 24, 40, 0.05);
+    }
+
+    .toc-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 4px;
+      font-size: 14px;
+      color: #475467;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 22px rgba(16, 24, 40, 0.04);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 25px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .notice {
+      background: var(--success-bg);
+      color: var(--success-text);
+      border: 1px solid #abefc6;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .info {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+    }
+
+    th,
+    td {
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-soft);
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 0.92em;
+    }
+
+    .footer {
+      padding: 0 0 60px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding-top: 24px;
+      }
+
+      .hero-card {
+        padding: 28px 22px;
+        border-radius: 22px;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .toc {
+        position: static;
+        margin-bottom: 18px;
+      }
+
+      .section {
+        padding: 22px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="app-badge">💧 Water Sort</div>
+        <h1>Privacy Policy</h1>
+        <p>
+          This Privacy Policy explains how Water Sort handles information when
+          you use the Water Sort Android game.
+        </p>
+        <p class="updated">
+          Effective date: September 21, 2026
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+
+    <aside class="toc">
+      <div class="toc-title">Contents</div>
+      <a href="#overview">1. Overview</a>
+      <a href="#information">2. Information We Handle</a>
+      <a href="#local-storage">3. Local Storage</a>
+      <a href="#advertising">4. Advertising</a>
+      <a href="#purchases">5. Purchases</a>
+      <a href="#analytics">6. Analytics & Diagnostics</a>
+      <a href="#third-party">7. Third-Party Services</a>
+      <a href="#children">8. Children</a>
+      <a href="#security">9. Security</a>
+      <a href="#retention">10. Retention</a>
+      <a href="#rights">11. Your Choices</a>
+      <a href="#changes">12. Policy Changes</a>
+      <a href="#contact">13. Contact</a>
+    </aside>
+
+    <main>
+
+      <section class="section" id="overview">
+        <h2>1. Overview</h2>
+
+        <p>
+          Water Sort is an Android puzzle game. The game is designed to work
+          primarily with locally stored game data and does not require you to
+          create an account.
+        </p>
+
+        <div class="notice">
+          <strong>Important:</strong> Water Sort does not currently operate its
+          own user account system, advertising server, analytics backend, or
+          cloud-save service. Some third-party services used by the app,
+          particularly advertising and Google Play services, may process
+          information according to their own privacy policies.
+        </div>
+
+        <p>
+          By using Water Sort, you acknowledge the practices described in this
+          Privacy Policy.
+        </p>
+      </section>
+
+      <section class="section" id="information">
+        <h2>2. Information We Handle</h2>
+
+        <p>
+          Water Sort does not ask you to provide personal information such as
+          your name, postal address, telephone number, or account password in
+          order to play the game.
+        </p>
+
+        <p>
+          Depending on the features you use, the app and its integrated
+          third-party services may process limited technical, advertising,
+          purchase, or diagnostic information.
+        </p>
+
+        <h3>Game information</h3>
+        <p>
+          The game stores information needed to provide gameplay features,
+          including:
+        </p>
+
+        <ul>
+          <li>Current and completed level progress</li>
+          <li>Coin balance</li>
+          <li>Sound and haptic preferences</li>
+          <li>Purchased or unlocked cosmetic styles</li>
+          <li>Selected bottle and background styles</li>
+          <li>Daily reward and streak information</li>
+          <li>Local entitlement information such as PRO or ad-removal status</li>
+          <li>Locally processed purchase tokens used to help prevent duplicate rewards</li>
+        </ul>
+
+        <p>
+          These values are used to operate the game and are stored locally on
+          your device.
+        </p>
+      </section>
+
+      <section class="section" id="local-storage">
+        <h2>3. Local Storage</h2>
+
+        <p>
+          Water Sort uses local device storage to remember your game progress
+          and settings. The current implementation uses Android-compatible
+          local application storage.
+        </p>
+
+        <p>
+          Examples include your level, coins, preferences, cosmetics, daily
+          reward state, and purchase-processing information.
+        </p>
+
+        <p>
+          Water Sort does not currently provide an account-based cloud-save
+          feature. If you uninstall the app, clear its application data, or
+          otherwise remove locally stored data, your locally stored game
+          progress may be lost.
+        </p>
+      </section>
+
+      <section class="section" id="advertising">
+        <h2>4. Advertising</h2>
+
+        <p>
+          Water Sort may display advertisements through Google AdMob. The app
+          can use banner, interstitial, and optional rewarded advertisements,
+          depending on the feature and your entitlement status.
+        </p>
+
+        <p>
+          Advertising providers may collect or receive information such as
+          advertising identifiers, device information, approximate location
+          information, app interaction information, and other information
+          permitted by their services and applicable law. The exact information
+          processed can depend on your device, consent choices, region, and
+          the advertising configuration in use.
+        </p>
+
+        <p>
+          Where required, Water Sort uses Google's consent mechanisms to allow
+          users to make applicable choices regarding personalized advertising
+          and related data processing.
+        </p>
+
+        <p>
+          You can learn more about Google's privacy practices in
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            Google's Privacy Policy
+          </a>.
+        </p>
+
+        <div class="info">
+          <strong>Note:</strong> The development build may use Google test
+          advertising identifiers and test ads. Production advertising
+          identifiers should be configured before public release.
+        </div>
+      </section>
+
+      <section class="section" id="purchases">
+        <h2>5. In-App Purchases</h2>
+
+        <p>
+          Water Sort may offer optional in-app purchases through Google Play,
+          including digital items, coin packs, ad removal, or PRO features.
+        </p>
+
+        <p>
+          Payments are processed by Google Play. Water Sort does not directly
+          receive or store your credit-card, debit-card, bank-account, or
+          other payment-card information.
+        </p>
+
+        <p>
+          Google Play may process purchase information, transaction details,
+          purchase tokens, and other information necessary to complete,
+          restore, secure, and manage purchases.
+        </p>
+
+        <p>
+          For information about Google Play's handling of your information,
+          please review Google's applicable privacy documentation.
+        </p>
+      </section>
+
+      <section class="section" id="analytics">
+        <h2>6. Analytics & Diagnostics</h2>
+
+        <p>
+          The current Water Sort architecture contains an analytics and
+          telemetry interface for game events and diagnostics. At the time
+          this policy was prepared, a Firebase Analytics or Crashlytics
+          backend was not connected.
+        </p>
+
+        <p>
+          The game can record local/debug events such as level starts, level
+          completions, failed levels, rewards, purchases, and ad events for
+          application operation and testing. These events are not currently
+          sent to a Water Sort-owned analytics server.
+        </p>
+
+        <p>
+          If a future version adds analytics, crash reporting, or another
+          remote telemetry provider, this Privacy Policy will be updated to
+          describe that processing before or when the relevant feature is
+          introduced, as applicable.
+        </p>
+      </section>
+
+      <section class="section" id="third-party">
+        <h2>7. Third-Party Services</h2>
+
+        <p>
+          Water Sort may rely on third-party services to provide advertising,
+          payments, app distribution, consent management, and related
+          functionality.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Provider</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google AdMob</td>
+                <td>Advertising and rewarded advertisements</td>
+                <td>Google LLC</td>
+              </tr>
+              <tr>
+                <td>Google Play Billing</td>
+                <td>In-app purchases and purchase restoration</td>
+                <td>Google LLC</td>
+              </tr>
+              <tr>
+                <td>Google consent services</td>
+                <td>Consent and advertising privacy choices where applicable</td>
+                <td>Google LLC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Third-party services operate under their own terms and privacy
+          policies. Their processing is not controlled by Water Sort except
+          through the configuration and permissions available to the app.
+        </p>
+      </section>
+
+      <section class="section" id="children">
+        <h2>8. Children</h2>
+
+        <p>
+          Water Sort is not specifically designed or directed toward children.
+          The game is intended for a general audience and is not intended to
+          knowingly collect personal information from children.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information to us
+          directly, please contact us so that we can review the situation and
+          take appropriate action.
+        </p>
+      </section>
+
+      <section class="section" id="security">
+        <h2>9. Security</h2>
+
+        <p>
+          We take reasonable measures appropriate to the app's design to
+          protect information handled by Water Sort. Game information stored
+          locally is protected by the security mechanisms provided by the
+          Android operating system and the application environment.
+        </p>
+
+        <p>
+          No electronic storage or transmission method can be guaranteed to
+          be completely secure. Third-party services are responsible for the
+          security of information they process under their respective
+          policies.
+        </p>
+      </section>
+
+      <section class="section" id="retention">
+        <h2>10. Retention</h2>
+
+        <p>
+          Locally stored game information generally remains on your device
+          until it is deleted by you, removed by uninstalling or clearing the
+          app's data, or replaced as part of normal game operation.
+        </p>
+
+        <p>
+          Information processed by Google or other third-party providers is
+          retained according to their respective policies and applicable
+          legal requirements.
+        </p>
+      </section>
+
+      <section class="section" id="rights">
+        <h2>11. Your Choices</h2>
+
+        <p>
+          Depending on your location and applicable law, you may have rights
+          relating to personal information processed by third parties.
+        </p>
+
+        <p>
+          You can also control certain information and advertising choices
+          through your Android device, Google account, advertising settings,
+          consent dialogs, and the controls provided within Water Sort.
+        </p>
+
+        <p>
+          You may delete locally stored Water Sort data by using the relevant
+          Android application-data controls or by uninstalling the app.
+        </p>
+
+        <p>
+          Deleting local data may remove your level progress, coins, cosmetic
+          unlocks, settings, and other locally stored information.
+        </p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>12. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy when the app, its services, or
+          applicable legal requirements change.
+        </p>
+
+        <p>
+          When changes are made, the updated version will be published at this
+          URL and the effective date at the top of this page will be updated.
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>13. Contact</h2>
+
+        <p>
+          If you have questions, concerns, or requests regarding this Privacy
+          Policy or Water Sort's privacy practices, contact the developer:
+        </p>
+
+        <div class="info">
+          <p><strong>Developer:</strong> Shubham Gautam</p>
+          <p><strong>Email:</strong> <a href="mailto:Gautamshubham962@gmail.com">GautamShubham962@Gmail.Com/a></p>
+          <p><strong>App:</strong> Water Sort</p>
+        </div>
+
+        <p>
+          Please replace the placeholder developer name and email address
+          before publishing this page and before submitting the app to Google
+          Play.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        © 2026 Water Sort. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
